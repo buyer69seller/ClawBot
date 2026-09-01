@@ -1,0 +1,10 @@
+{
+  "build": {
+    "builder": "DOCKERFILE"
+  },
+  "deploy": {
+    "startCommand": "python -m src.main",
+    "healthcheckPath": "/health",
+    "healthcheckTimeout": 100
+  }
+}
